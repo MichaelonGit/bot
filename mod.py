@@ -24,4 +24,4 @@ async def on_message(message):
         await member.add_roles(role)
         await member.remove_roles(role1)
         await message.channel.send(f"{member.mention}"'has been muted! for bad word!')
-bot.run('MTA3MTQyMDMyMjA5NzY3MjI0Mg.Gpi8Rh.fhf9ahON6xEG_S0QlRjTsyYGoSFNvFgnUNNFNk')
+bot.run('Token here')
