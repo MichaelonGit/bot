@@ -8,7 +8,8 @@ arg=1
 channel = bot.get_channel(1071416735909036154)
 @bot.event
 async def on_ready():
-    channel = bot.get_channel(name='botlog')
+    id = 'your id here please delet this you only need the number without apostrophe'
+    channel = bot.get_channel(id)
     activity = discord.Activity(name='Minecraft', type=discord.ActivityType.playing,large_image='lol', large_text='Yes')
     await bot.change_presence(activity=activity)
     await channel.send('Bot online')
