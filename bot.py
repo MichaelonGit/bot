@@ -8,7 +8,7 @@ arg=1
 channel = bot.get_channel(1071416735909036154)
 @bot.event
 async def on_ready():
-    channel = bot.get_channel(1071416735909036154)
+    channel = bot.get_channel(name='botlog')
     activity = discord.Activity(name='Minecraft', type=discord.ActivityType.playing,large_image='lol', large_text='Yes')
     await bot.change_presence(activity=activity)
     await channel.send('Bot online')
@@ -16,7 +16,7 @@ async def on_error():
     error()
 @bot.command()
 async def website(ctx):
-    await ctx.channel.send('https://sites.google.com/view/byzantine-empire-news/landing-page')
+    await ctx.channel.send('https://github.com/MichaelonGit/bot')
 @bot.command()
 async def unmute(ctx,member: discord.Member):
     if ctx.author.top_role.permissions.administrator == True:
@@ -42,15 +42,13 @@ async def mute(ctx,member: discord.Member):
 @bot.command()
 async def minserverip(ctx):
     member= ctx.message.author
-    hostname = '23.183.244.148'
+    hostname = 'https://github.com/MichaelonGit/bot'
     response = os.system("ping -c 1 " + hostname + ' 2>/dev/null 1>&2')
     if response == 0:
         await ctx.send(member.mention + " " + hostname + ' is currently online')
     else:
         await ctx.send(member.mention + " " + hostname + ' is down')
-    await ctx.channel.send('JAVA: ip:23.183.244.148:25759')
-    await ctx.channel.send('Bedrock: ip:23.183.244.148 port:25009 ')
-    await ctx.channel.send('Dynamic map: http://23.183.244.148:25242/#')
+    await ctx.channel.send('https://github.com/MichaelonGit/bot')
     await ctx.send(f"{member.mention}")
 @bot.command()
 async def list(ctx,message):
