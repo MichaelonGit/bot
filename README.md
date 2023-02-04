@@ -12,3 +12,8 @@ replace the ids in mute and unmute in bolth bots with your own role line 33 and 
 you can use your own website in line 19 
 don't forget to install all the requirt stuff using pip install discord.py discord.ext discord.utils and os you can add or change to code if you want 
 make costum commands as well 
+
+# Support
+This bot will be update untill 2024
+discord tag : Michael9gamer#0978
+if you need help send me a dm 
